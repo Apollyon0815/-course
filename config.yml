@@ -1,0 +1,16 @@
+title: 첫번째 저장소
+description: 솔직히 뭐가 뭔지 모르겠는데 까놓고 말해서 명일방주 처음으로 플레이할 때도 그랬어 ㅇㅇ
+template:
+  repo: '-template'
+  name: ''
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
